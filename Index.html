@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+    
+    <title>GAC MOTORS</title>
+</head>
+<body>
+
+
+
+  <div id="preloader">
+        <div id="preloader-container">
+          <div id="loading-circle"></div>
+          <div id="percentage">0%</div>
+          <div id="logo">
+            <img src="assets\logo-gac-for-website-2.png" alt="Logo de la empresa" width="400" height="100">
+          </div>
+        </div>
+      </div>
+
+
+
+
+<div id="main">
+    <header data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -200px;">
+
+        <div id="contenedor">
+            <img id="imagen" src="assets\sloganimgblack.png" alt="Gac slogan">
+        </div>
+
+     <div id="headercontent" data-top=" opacity:1; transform[swing]:scale(1) " data-top-bottom=" opacity:0; transform[swing]:scale(0.5) " data-anchor-target="header">
+        <!-- <h1 class="title_firstslide">¿ESTÁS LISTO? </h1> -->
+         <br><br>
+        <!-- <p><a style="color:white"target="_blank">Scrollea</a></p> -->
+     </div>
+
+    
+        <!-- Contenido de la primera sección de tu página -->
+    
+        <!-- Reproductor de audio -->
+        <div class="audio-player">
+            <i class="play-pause-btn fas fa-play-circle"></i>
+            <audio id="audio" src="assets\motor.mp3"></audio>
+        </div>
+     
+    
+
+     <div class="mouse animated fadeInUp" data-top=" opacity:1;  " data-top-bottom=" opacity:0; " data-anchor-target="header">
+      <div class="scroll">
+     </div>
+
+     
+    </header>
+     </div>
+
+
+<!--CARDS CATEGORIES-->
+
+<!--     
+<div class="container">
+    <div class="logo">
+        <img src="ruta/al/logo.png" alt="Logo de la empresa" width="400" height="300">
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li>
+                <a href="#">Servicios</a>
+                <ul class="submenu">
+                    <li><a href="#">Servicio 1</a></li>
+                    <li><a href="#">Servicio 2</a></li>
+                    <li><a href="#">Servicio 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Acerca de nosotros</a></li>
+            <li>
+                <a href="#">Contacto</a>
+                <ul class="submenu">
+                    <li><a href="#">Teléfono</a></li>
+                    <li><a href="#">Correo</a></li>
+                    <li><a href="#">Ubicación</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="redes-sociales">
+        <a href="#" class="social-icon">Facebook</a>
+        <a href="#" class="social-icon">Instagram</a>
+        <a href="#" class="social-icon">WhatsApp</a>
+    </div>
+</div>
+ -->
+
+
+<section class="card_container">   
+     
+
+    <div id="top">
+        <div class="perspective">
+       <div class="card">
+                <div class="thumb" style="background-color: #ededed;"></div>
+                <img class="img_gs3" src="assets\gn6.png" alt="gs3" width="250px" height="130px">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="top2">
+        <div class="perspective2">
+       <div class="card2">
+                <div class="thumb" style="background-color: #ededed;"></div>
+                <img class="img_gs8" src="assets\gs8turquese.png" alt="gs8" width="270px" height="150px">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="top3">
+         <div class="perspective3">
+             <div class="card3">
+                 <div class="thumb" style="background-color: #ededed;"></div>
+                 <img class="img_emkoo" src="assets\emkoowhite.png" alt="EMKOO" width="250px" height="160px">
+                 <span></span>
+             </div>
+         </div>
+        </div>
+
+
+ 
+
+<div id="top4">
+         <div class="perspective4">
+        <div class="card4">
+                 <div class="thumb" style="background-color: #ededed;"></div>
+                 <img class="img_gs3" src="assets\gs3black.png" alt="gs3" width="250px" height="150px">
+                 <span></span>
+             </div>
+         </div>
+     </div>
+ </div>
+
+</section>
+
+<style>
+/*menu*/
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+}
+
+.logo img {
+    width: 400px;
+    height: 300px;
+}
+
+
+.menu {
+    flex-grow: 1;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #007BFF;
+}
+
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    width: 150px;
+    text-align: left;
+}
+
+.redes-sociales {
+    display: flex;
+}
+
+.social-icon {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.social-icon:hover {
+    color: #007BFF;
+}
+
+
+
+    /*Vehicles categories*/
+
+.card_container {
+margin: 0;
+min-height: 100vh;
+display: grid;
+place-content: center;
+grid-auto-flow: column;
+gap: 80px;
+background-color: #676767ca;
+
+}
+
+.perspective {
+  width: 100%;
+  perspective: 1000px;
+}
+.perspective2 {
+  width: 100%;
+  perspective: 1000px;
+}
+
+.perspective3 {
+  width: 100%;
+  perspective: 1000px;
+}
+
+.perspective4 {
+  width: 100%;
+  perspective: 1000px;
+}
+
+#top {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+#top2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+#top3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+#top4 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.card {
+  width: 270px;
+  height: 413px;
+  margin: auto;
+  box-shadow: 0 70px 63px -60px #494848;
+  transform-style: preserve-3d;
+transition: transform .05s linear;}
+
+  .thumb {
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      border-radius: 15px;
+
+  
+  }
+
+  h2 {
+      position: absolute;
+      top: 0;
+      left: -60px;
+      font-size: 40px;
+      font-weight: 100;
+      transform: translateZ(80px);
+  }
+
+  span {
+      position: absolute;
+      bottom: 40px;
+      right: -280px;
+      font-size: 37px;
+      font-weight: 600;
+      transform: translateZ(35px);
+  }
+
+.card2 {
+  width: 270px;
+  height: 413px;
+  margin: auto;
+  box-shadow: 0 70px 63px -60px #494848;
+  transform-style: preserve-3d;
+transition: transform .05s linear;}
+
+  .thumb {
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      border-radius: 15px;
+  }
+
+  .img_emkoo {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    font-size: 40px;
+    font-weight: 100;
+    transform: translateZ(80px);
+}
+
+  .img_gs8 {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    margin-top: 25px;
+    font-size: 40px;
+    font-weight: 100;
+    transform: translateZ(80px);
+}
+
+.img_gs3 {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: 100;
+    transform: translateZ(80px);
+}
+
+
+  span {
+      position: absolute;
+      bottom: 40px;
+      right: -280px;
+      font-size: 37px;
+      font-weight: 600;
+      transform: translateZ(35px);
+  }
+
+
+.card3 {
+  width: 270px;
+  height: 413px;
+  margin: auto;
+  box-shadow: 0 70px 63px -60px #494848;
+  transform-style: preserve-3d;
+transition: transform .05s linear;}
+
+  .thumb {
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      border-radius: 15px;
+
+  
+  }
+
+  h2 {
+      position: absolute;
+      top: 0;
+      left: -60px;
+
+      transform: translateZ(80px);
+  }
+
+  span {
+      position: absolute;
+      bottom: 40px;
+      right: -280px;
+      font-size: 37px;
+      font-weight: 600;
+      transform: translateZ(35px);
+  }
+
+
+
+.card4 {
+  width: 270px;
+  height: 413px;
+  margin: auto;
+  box-shadow: 0 70px 63px -60px #494848;
+  transform-style: preserve-3d;
+transition: transform .05s linear;}
+
+  .thumb {
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      border-radius: 15px;
+
+  
+  }
+
+  h2 {
+      position: absolute;
+      top: 0;
+      left: -60px;
+      font-size: 40px;
+      font-weight: 100;
+      transform: translateZ(80px);
+  }
+
+  span {
+      position: absolute;
+      bottom: 40px;
+      right: -280px;
+      font-size: 37px;
+      font-weight: 600;
+      transform: translateZ(35px);
+  }
+
+    /*NAVBAR*/
+
+
+/*End Vehicles Categories*/
+
+</style>
+        
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="
+   https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+<script type="text/javascript">var s=skrollr.init({forceHeight:false});</script> 
+
+<script>
+    var k = $(".card");
+    $("#top").on("mousemove", function (d) {
+        var s = -($(window).innerWidth() / 2 - d.pageX) / 80,
+            c = ($(window).innerHeight() / 2 - d.pageY) / 70;
+        k.attr("style", "transform: rotateY(" + s + "deg) rotateX(" + c + "deg);-webkit-transform: rotateY(" + s + "deg) rotateX(" + c + "deg);-moz-transform: rotateY(" + s + "deg) rotateX(" + c + "deg)")
+    })
+    
+    var b = $(".card2");
+    $("#top2").on("mousemove", function (t) {
+        var e = -($(window).innerWidth() / 2 - t.pageX) / 80,
+            n = ($(window).innerHeight() / 2 - t.pageY) / 70;
+        b.attr("style", "transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-webkit-transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-moz-transform: rotateY(" + e + "deg) rotateX(" + n + "deg)")
+    })
+    
+    
+    var w = $(".card3");
+    $("#top3").on("mousemove", function (y) {
+        var u = -($(window).innerWidth() / 2 - y.pageX) / 80,
+            p = ($(window).innerHeight() / 2 - y.pageY) / 70;
+        w.attr("style", "transform: rotateY(" + u + "deg) rotateX(" + p + "deg);-webkit-transform: rotateY(" + u + "deg) rotateX(" + p + "deg);-moz-transform: rotateY(" + u + "deg) rotateX(" + p + "deg)")
+    })
+    
+    
+    var a = $(".card4");
+    $("#top4").on("mousemove", function (s) {
+        var m = -($(window).innerWidth() / 2 - s.pageX) / 80,
+            l = ($(window).innerHeight() / 2 - s.pageY) / 70;
+        a.attr("style", "transform: rotateY(" + m + "deg) rotateX(" + l + "deg);-webkit-transform: rotateY(" + m + "deg) rotateX(" + l + "deg);-moz-transform: rotateY(" + m + "deg) rotateX(" + l + "deg)")
+    })
+    </script>
+
+ <script>
+const playPauseBtn = document.querySelector('.play-pause-btn');
+    const audio = document.getElementById('audio');
+    let isPlaying = false;
+
+    playPauseBtn.addEventListener('click', togglePlayPause);
+
+    function togglePlayPause() {
+      if (isPlaying) {
+        audio.pause();
+      } else {
+        audio.play();
+      }
+
+      isPlaying = !isPlaying;
+      updatePlayPauseIcon();
+    }
+
+    function updatePlayPauseIcon() {
+      playPauseBtn.classList.toggle('fa-play-circle', !isPlaying);
+      playPauseBtn.classList.toggle('fa-pause-circle', isPlaying);
+    }
+  </script>
+
+  
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+          // Simulación de carga
+          let percentage = 0;
+          let loadingInterval = setInterval(function () {
+            percentage++;
+            document.getElementById("percentage").innerText = percentage + "%";
+            if (percentage === 100) {
+              clearInterval(loadingInterval);
+              // Ocultar el número después de 1 segundo
+              setTimeout(function () {
+                document.getElementById("percentage").style.opacity = 0;
+              }, -0.1);
+              document.getElementById("preloader-container").style.display = "flex";
+              document.getElementById("loading-circle").style.display = "none";
+              document.getElementById("logo").style.display = "block";
+              // Ocultar el preloader después de 3 segundos
+              setTimeout(function () {
+                document.getElementById("preloader").style.display = "none";
+                document.getElementById("content").style.display = "block";
+              }, 3000);
+            }
+          }, 30);
+        });
+
+    </script>
+
+    <script>
+    
+    document.addEventListener("DOMContentLoaded", function() {
+    const menuItems = document.querySelectorAll('.menu li');
+
+    menuItems.forEach(item => {
+        item.addEventListener('mouseenter', function() {
+            const submenu = this.querySelector('.submenu');
+            if (submenu) {
+                submenu.style.display = 'block';
+            }
+        });
+
+        item.addEventListener('mouseleave', function() {
+            const submenu = this.querySelector('.submenu');
+            if (submenu) {
+                submenu.style.display = 'none';
+            }
+        });
+    });
+});
+
+
+    </script>
+</body>
+</html>
