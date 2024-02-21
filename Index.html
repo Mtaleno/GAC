@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.hoverintent/2013.03.11/hoverintent.min.js"></script>
     <title>GAC MOTORS</title>
 </head>
 <body>
 
 
-
+<!--
 <div id="preloader">
-        <!-- <div id="preloader-container">
+         <div id="preloader-container">
           <div id="loading-circle"></div>
           <div id="percentage">0%</div>
           <div id="logo">
@@ -22,80 +29,858 @@
           </div>
         </div>
       </div> -->
+     
 
+  <div class="header">
+
+    <nav class="navbar animate__animated animate__fadeIn animation-duration: 3s;">
+      <div class="logo">
+        <img src="assets/gacmotorredlogo.png" alt="Logo" >
+      </div>
+
+      <div class="hamburger" id="hamburger-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="menu" >
+        <img class="logo-mobile" src="assets/gacmotorredlogo.png" alt="Logomobile" width="220" height="auto">
+        <ul>
+          <li><a href="#">INICIO</a></li>
+
+           <li class="submenu">
+            <a href="#">MODELOS</a>
+            <ul id="submenu-li" class="submenu-items">
+              <li><a href="#">GS8</a></li>
+              <li><a href="#">EMKOO</a></li>
+              <li><a href="#">GS3</a></li>
+              <li><a href="#">M6</a></li>
+            </ul>
+          </li> 
+          <li><a href="#">QUIÉNES SOMOS</a></li>
+          <li class="submenu">
+            <a href="#">POSTVENTA</a>
+            <ul id="submenu-li">
+              <li><a href="#">Talleres</a></li>
+              <li><a href="#">Repuestos</a></li>
+            </ul>
+          </li>
+          <li><a href="#">BLOG</a></li>
+          <div class="social-icons-mobile">
+            <a href="#"><img src="assets/fbhome.png" alt="Facebook"></a>
+            <a href="#"><img src="assets/ighome.png" alt="Twitter"></a>
+            <a href="#"><img src="assets/wphome.png" alt="Instagram"></a>
+            <a href="#"><img src="assets/ythome.png" alt="LinkedIn"></a>
+          </div>
+        </ul>
+        <button id="cerrar-btn">X</button>
+      </div>
+      <div class="social-icons">
+        <a href="#"><img id="fbhome" src="assets/fbhome.png" alt="Facebook"></a>
+        <a href="#"><img id="ighome" src="assets/ighome.png" alt="Instagram"></a>
+        <a href="#"><img id="wphome" src="assets/wphome.png" alt="Whatsapp"></a>
+        <a href="#"><img id="ythome" src="assets/ythome.png" alt="Youtube"></a>
+      </div>
+    </nav>
+
+  <section>
+    <div class="contenedor-imagen" >
+      <img src="assets/Saludo.png" alt="saludo"  class="animate__animated animate__fadeInDownBig animation-duration: 4s;">
+    </div>
+  </section>
+
+    <section class="vehicle-home">
+      <div class="car-container animate__animated animate__fadeIn animation-duration: 3s;">
+          <div class="car">
+              <img src="assets/GS8_home.png" alt="Vehículo 1">
+              <div class="tooltipcar">
+                <img class="tooltipcar-img" src="assets/gs8-tooltip.png">
+              </div>
+          </div>
+          <div class="car">
+              <img src="assets/emkoo_home.png" alt="Vehículo 2">
+              <div class="tooltipcar">
+                <img class="tooltipcar-img" src="assets/emkoo-tooltip.png">
+              </div>
+          </div>
+          <div class="car">
+              <img src="assets/emzoo_home.png" alt="Vehículo 3">
+              <div class="tooltipcar">
+                <img class="tooltipcar-img" src="assets/gs3-tooltip.png">
+              </div>
+          </div>
+          <div class="car">
+              <img src="assets/M6_home.png" alt="Vehículo 4" style="margin-top: -10px;">
+              <div class="tooltipcar">
+                <img class="tooltipcar-img" src="assets/m6-tooltip.png">
+              </div>
+          </div>
+      </div>
+    </section>
+    <div class="audio-player">
+      <i class="play-pause-btn fas fa-play-circle"></i>
+      <audio id="audio" src="assets/audiogac.mp3"></audio>
+    </div>
+
+      <div class="benefits-hero animate__animated animate__fadeIn">
+        <div class="caja">
+          <p><span>5 AÑOS</span> <br>DE GARANTÍA</p>
+        </div>
+        <div class="caja">
+          <p><span>10 MANTENIMIENTOS</span> <br>GRATIS</p>
+        </div>
+        <div class="caja">
+          <p style="font-weight: 700;">ENTREGA <br>INMEDIATA</p>
+        </div>
+      </div>
+
+      <section>
+      <a href="#categories" >
+        <img class="scroll" src="assets/scroll.png">
+      </a>
+    </div>
+    </section>
+
+    <!-- <audio id="audiogac" autoplay>
+      <source src="assets/audiogac.mp3" type="audio/mp3">
+      Tu navegador no soporta la etiqueta de audio.
+    </audio> -->
+
+    <div class="menusticky">
+      <a class="dot" href="#index">
+        <img id="promofm" src="assets/promo.png">
+        <span class="forty">PROMOCIONES</span>
+      </a>
+
+      <a class="dot" href="#index">
+        <img id="cotizarfm" src="assets/cotizar.png">
+        <span class="sixty">COTIZAR</span>
+      </a>
+
+      <a class="dot" href="#index">
+        <img id="wpfm" src="assets/whatsapp.png">
+        <span class="seventy">WHATSAPP</span>
+      </a>
+
+      <a class="dot" href="#index">
+        <img id="ubicacionfm" src="assets/ubicacion.png">
+        <span class="eighty">UBICACIÓN</span>
+      </a>
+    </div>
+
+    <section id="categories">
+
+      <div class="slogan">
+        <img class="slogan-img" src="assets/slogangachome.png">
+      </div>
+      <div class="description-slogan ">
+        <p>Espacio, seguridad, tecnología y diseño aerodinámico forman el<br>
+          ADN de nuestro line up de última generación.</p>
+      </div>
+
+      <div class="slider">
+        <button id="prev" class="btn-card">
+          <i class="las la-angle-left" style="color: #fff;"></i>
+        </button>
+        <div class="card-content">
+
+          <!-- Card -->
+        <div class="card" >
+          <img class="name-categories" src="assets/gs3logo.png">
+          <h4 class="slogan-categories">TECNOLOGÍA AL MÁXIMO</h4>
+          <img class="car-categories" src="assets/GS3-CT.png">
+
+          <div class="mi-container">
+            <div class="icon-container">
+              <div class="icon">
+                <img src="assets/seaticon.png" alt="Icono 1"> 
+                <p>5</p>
+              </div>
+
+            </div>
+            <div class="icon-container">
+              <div class="icon">
+                <img src="assets/tmicon.png" alt="Icono 1"> 
+                <p>AT</p>
+              </div>
+            </div>
+            <div class="icon-container">
+              <div class="icon">
+                <img src="assets/gasicon.png" alt="Icono 1"> 
+                <p>Gasolina</p>
+              </div>
+            </div>
+          </div>
+          <div class="cont">
+            <!-- Puedes usar un icono específico, como Font Awesome, o simplemente un símbolo de "+" -->
+            <button class="btn-car"><span class="icon-car">+</span></button>
+          </div>
+      </div>
+          <!-- Card End -->
+          
+          <!-- Card -->
+          <div class="card">
+            <img class="name-categories" src="assets/emkoologo.png">
+            <h4 class="slogan-categories slogan-left" >UNA SUV A OTRO NIVEL</h4>
+            <img class="car-categories" src="assets/EMKOO-CT.png">
+  
+            <div class="mi-container">
+              <div class="icon-container">
+                <div class="icon">
+                  <img src="assets/seaticon.png" alt="Icono 1"> 
+                  <p>5</p>
+                </div>
+  
+              </div>
+              <div class="icon-container">
+                <div class="icon">
+                  <img src="assets/tmicon.png" alt="Icono 1"> 
+                  <p>AT</p>
+                </div>
+              </div>
+              <div class="icon-container">
+                <div class="icon">
+                  <img src="assets/gasicon.png" alt="Icono 1"> 
+                  <p>Gasolina</p>
+                </div>
+              </div>
+            </div>
+            <div class="cont">
+              <!-- Puedes usar un icono específico, como Font Awesome, o simplemente un símbolo de "+" -->
+              <button class="btn-car"><span class="icon-car">+</span></button>
+            </div>
+        </div>
+          <!-- Card End -->
+          <div class="card">
+            <img class="name-categories" src="assets/m6logo.png">
+            <h4 class="slogan-categories slogan-left">TU MUNDO CON VOS</h4>
+            <img class="car-categories" src="assets/M6-CT.png">
+  
+            <div class="mi-container">
+              <div class="icon-container">
+                <div class="icon">
+                  <img src="assets/seaticon.png" alt="Icono 1"> 
+                  <p>5</p>
+                </div>
+  
+              </div>
+              <div class="icon-container">
+                <div class="icon">
+                  <img src="assets/tmicon.png" alt="Icono 1"> 
+                  <p>AT</p>
+                </div>
+              </div>
+              <div class="icon-container">
+                <div class="icon">
+                  <img src="assets/gasicon.png" alt="Icono 1"> 
+                  <p>Gasolina</p>
+                </div>
+              </div>
+            </div>
+            <div class="cont">
+              <!-- Puedes usar un icono específico, como Font Awesome, o simplemente un símbolo de "+" -->
+              <button class="btn-car"><span class="icon-car">+</span></button>
+            </div>
+        </div>
+        <!-- Card End -->
+          
+        <!-- Card -->
+        <div class="card">
+          <img class="name-categories" src="assets/gs8logo.png">
+          <h4 class="slogan-categories slogan-left">LUJO Y EXPANSION</h4>
+          <img class="car-categories" src="assets/GS8-CT.png">
+
+          <div class="mi-container">
+            <div class="icon-container">
+              <div class="icon">
+                <img src="assets/seaticon.png" alt="Icono 1"> 
+                <p>5</p>
+              </div>
+
+            </div>
+            <div class="icon-container">
+              <div class="icon">
+                <img src="assets/tmicon.png" alt="Icono 1"> 
+                <p>AT</p>
+              </div>
+            </div>
+            <div class="icon-container">
+              <div class="icon">
+                <img src="assets/gasicon.png" alt="Icono 1"> 
+                <p>Gasolina</p>
+              </div>
+            </div>
+          </div>
+          <div class="cont">
+            <!-- Puedes usar un icono específico, como Font Awesome, o simplemente un símbolo de "+" -->
+            <button class="btn-car"><span class="icon-car">+</span></button>
+          </div>
+      </div>
+      <!-- Card End -->
+      
+    </div>
+     <button id="next" class="btn-card">
+      <i class="las la-angle-right" style="color: #fff;"></i>
+    </button>
+  </div>
+    </section> 
+
+  <section id="aboutus" >
+    <h1 class="slogan-about">CAMBIAMOS EL JUEGO</h1>
+
+    <div class="content-wrapper">
+      <div class="paragraph-section">
+        <p><strong>En Gac Motors impulsamos a nuestros
+          usuarios a ser su versión más auténtica
+          conduciendo a su propio ritmo y
+          acompañados de tecnología para viajes
+          más placenteros.</strong>Mundialmente
+          premiados y en constante crecimiento,
+          traemos soluciones, estilo, rendimiento y
+          sobre todo calidad difícil de olvidar pero
+          fácil de disfrutar.</p>
+      </div>
+      <div class="image-section">
+        <img class="responsive-image" src="assets/ajedrez.png">
+      </div>
+    </div>
+  </section>
+
+  <section id="flags-section" >
     
-        <!-- Reproductor de audio -->
-        <!-- <div class="audio-player">
-            <i class="play-pause-btn fas fa-play-circle"></i>
-            <audio id="audio" src="assets\motor.mp3"></audio>
-        </div>  -->
+    <div class="logo-flags">
+      <img class="g-logo" src="assets/G-latinamerica.png">
+      <h2 class="g-title">LATINOAMÉRICA</h2>
+    </div>
 
-<style>
+    <div class="flags-container">
+      <div class="flag">
+        <img src="assets/NICARAGUA.png">
+        <p>Nicaragua</p>
+      </div>
+
+      <div class="flag">
+        <img src="assets/MÉXICO.png">
+        <p>México</p>
+      </div>
+
+      <div class="flag">
+        <img src="assets/PERÚ.png">
+        <p>Perú</p>
+      </div>
+
+      <div class="flag">
+        <img src="assets/PARAGUAY.png">
+        <p>Paraguay</p>
+      </div>
+
+      <div class="flag">
+        <img src="assets/PANAMÁ.png">
+        <p>Panamá</p>
+      </div>
+
+      <div class="flag">
+        <img src="assets/ECUADOR.png">
+        <p>Ecuador</p>
+      </div>
+
+      <div class="flag">
+        <img src="assets/BOLIVIA.png">
+        <p>Bolivia</p>
+      </div>
+
+      <div class="flag">
+        <img src="assets/CHILE.png">
+        <p>Chile</p>
+      </div>
+
+      <div class="flag flag-space">
+        <img src="assets/REP DOMINIC.png">
+        <p>República Dominicana</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="awards-section">
+
+    <div class="image-container-wrapper">
+      <div class="horizontal-images">
+        <div class="photo_gallery">
+          <a href="#"><a href="#"><img src="assets/first-award.png" alt="Image 1" class="award-image"></a></a>
+          <p>Tooltip info goes here...Tooltip info goes here...Tooltip info goes here...</p>
+        </div>
+
+        <div class="photo_gallery">
+          <a href="#"><a href="#"><img src="assets/first-award-title.png" alt="Image 2" class="award-image "></a></a>
+          <p>Tooltip info goes here...Tooltip info goes here...Tooltip info goes here...</p>
+        </div>
+
+        <div class="photo_gallery">
+          <a href="#"><a href="#"><img src="assets/second-award.png" alt="Image 3" class="award-image award"></a></a>
+          <p>Tooltip info goes here...Tooltip info goes here...Tooltip info goes here...</p>
+        </div>
+
+        <div class="photo_gallery">
+          <a href="#"><a href="#"><img src="assets/second-award-title.png" alt="Image 4" class="award-image"></a></a>
+          <p>Tooltip info goes here...Tooltip info goes here...Tooltip info goes here...</p>
+        </div>
+
+        <div class="photo_gallery">
+          <a href="#"><a href="#"><img src="assets/third-award.png" alt="Image 5" class="third-award"></a></a>
+          <p>Tooltip info goes here...Tooltip info goes here...Tooltip info goes here...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo-container">
+      <img src="assets/gacmotorredlogo.png" alt="Logo Empresa" class="footer-logo">
+    </div>
+    <div class="footer-content">
+      <div class="footer-column">
+        <ul class="models-list"> Modelos
+
+          <li><a href="#home">Emzoom</a></li>
+          <li><a href="#home">Emkoo</a></li>
+          <li><a href="#home">GS8</a></li>
+          <li><a href="#home">M6</a></li> 
+
+        </ul>
+        
+      </div>
+      <div class="footer-column">
+        <ul class="services-list">
+
+          <li><a href="#home">Servicio al Cliente</a></li>
+          <li><a href="#home">Red de Atención</a></li>
+          <li><a href="#home">Promociones</a></li>
+          <li><a href="#home">Politica de Privacidad</a></li>
+          <li><a href="#home">Politica de Cookies</a></li> 
+
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <ul class="contact-list">
+
+          <li><a href="#home">+505 89899898</a></li>
+          <li><a href="#home">Email: Serviciogac@gmail.com</a></li>
+          <li><a href="#home">Showroom Galerías Santo Domingo</a></li>
+          <li><a href="#home">Managua, Nicaragua</a></li>
+
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <!-- Contenido de la columna 3 -->
+      </div>
+      <div class="footer-column">
+        <img src="assets/samsalogo.png" alt="Logo Derecha" class="footer-logo-samsa">
+        <div class="socialicon-container-ft">
+        <a href="#home"><img src="assets/ft-facebook.png" alt="Facebook" class="social-icon-ft"></a>
+        <a href="#home"><img src="assets/ft-instagram.png" alt="Instagram" class="social-icon-ft"></a>
+        <a href="#home"><img src="assets/ft-whatapp.png" alt="whatsapp" class="social-icon-ft"></a>
+        <a href="#home"><img src="assets/ft-youtube.png" alt="YouTube" class="social-icon-ft"></a>
+      </div>
+      </div>
+    </div>
+
+  </footer>
 
 
-</style>
-       
+  <div class="copyright-section">
+    <p>Copyright by SAMSA Nicaragua 2024. Todos los derechos reservados.</p>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-   
+  <!-- <script>
+  const next=document.querySelector('#next')
+  const prev=document.querySelector('#prev')
+  
+  function handleScrollNext (direction) {
+    const cards = document.querySelector('.card-content')
+    cards.scrollLeft=cards.scrollLeft += window.innerWidth / 2 > 600 ? window.innerWidth /2 : window.innerWidth -100
+  }
+  
+  function handleScrollPrev (direction) {
+    const cards = document.querySelector('.card-content')
+    cards.scrollLeft=cards.scrollLeft -= window.innerWidth / 2 > 600 ? window.innerWidth /2 : window.innerWidth -100
+  }
+  
+  next.addEventListener('click', handleScrollNext)
+  prev.addEventListener('click', handleScrollPrev);
+  </script>
+  
+  <script>
+    $(document).ready(function() {
+    $(document).on("scroll", onScroll);
+  
+    //smoothscroll
+    $(".menusticky a").on("click", function(e) {
+      e.preventDefault();
+      $(document).off("scroll");
+      console.log("click");
+  
+      $(".menusticky a").each(function() {
+        $(this).removeClass("active");
+      });
+      $(this).addClass("active");
+  
+      var target = this.hash,
+          menu = target;
+      $target = $(target);
+      $("html, body")
+        .stop()
+        .animate(
+        {
+          scrollTop: $target.offset().top + 2
+        },
+        500,
+        "swing",
+        function() {
+          window.location.hash = target;
+          $(document).on("scroll", onScroll);
+        }
+      );
+    });
+  });
+  
+  function onScroll(event) {
+    var scrollPos = $(document).scrollTop();
+    $(".menusticky a").each(function() {
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href"));
+      if (
+        refElement.position().top <= scrollPos &&
+        refElement.position().top + refElement.height() > scrollPos
+      ) {
+        $(".menusticky a").removeClass("active");
+        currLink.addClass("active");
+      } else {
+        currLink.removeClass("active");
+      }
+    });
+  }
+ </script> -->
+ <script>
+  // Puedes ajustar el tiempo de espera (en milisegundos) según tus necesidades
+  const tiempoEspera = 3000; // 2000 milisegundos = 2 segundos
+
+  // Función para detener la reproducción después de un tiempo
+  function detenerReproduccion() {
+      document.getElementById('audiogac').pause();
+  }
+
+  // Establecer un temporizador para detener la reproducción después de un tiempo
+  setTimeout(detenerReproduccion, tiempoEspera);
+</script>
 
  <script>
-
-  /*Audio Boton*/ 
-const playPauseBtn = document.querySelector('.play-pause-btn');
-    const audio = document.getElementById('audio');
-    let isPlaying = false;
-
-    playPauseBtn.addEventListener('click', togglePlayPause);
-
-    function togglePlayPause() {
-      if (isPlaying) {
-        audio.pause();
-      } else {
-        audio.play();
-      }
-
-      isPlaying = !isPlaying;
-      updatePlayPauseIcon();
-    }
-
-    function updatePlayPauseIcon() {
-      playPauseBtn.classList.toggle('fa-play-circle', !isPlaying);
-      playPauseBtn.classList.toggle('fa-pause-circle', isPlaying);
-    }
-    /* Fin Audio Boton*/ 
-  </script>
-
+  const playPauseBtn = document.querySelector('.play-pause-btn');
+      const audio = document.getElementById('audio');
+      let isPlaying = false;
   
-<script>
-  /*preloader*/ 
-    document.addEventListener("DOMContentLoaded", function () {
-          // Simulación de carga
-          let percentage = 0;
-          let loadingInterval = setInterval(function () {
-            percentage++;
-            document.getElementById("percentage").innerText = percentage + "%";
-            if (percentage === 100) {
-              clearInterval(loadingInterval);
-              // Ocultar el número después de 1 segundo
-              setTimeout(function () {
-                document.getElementById("percentage").style.opacity = 0;
-              }, -0.1);
-              document.getElementById("preloader-container").style.display = "flex";
-              document.getElementById("loading-circle").style.display = "none";
-              document.getElementById("logo").style.display = "block";
-              // Ocultar el preloader después de 3 segundos
-              setTimeout(function () {
-                document.getElementById("preloader").style.display = "none";
-                document.getElementById("content").style.display = "block";
-              }, 3000);
-            }
-          }, 30);
-        });
-  /*fin preloader*/ 
+      playPauseBtn.addEventListener('click', togglePlayPause);
+  
+      function togglePlayPause() {
+        if (isPlaying) {
+          audio.pause();
+        } else {
+          audio.play();
+        }
+  
+        isPlaying = !isPlaying;
+        updatePlayPauseIcon();
+      }
+  
+      function updatePlayPauseIcon() {
+        playPauseBtn.classList.toggle('fa-play-circle', !isPlaying);
+        playPauseBtn.classList.toggle('fa-pause-circle', isPlaying);
+      }
     </script>
+  
 
+ <script>
+    const next=document.querySelector('#next')
+  const prev=document.querySelector('#prev')
+  
+  function handleScrollNext (direction) {
+    const cards = document.querySelector('.card-content')
+    cards.scrollLeft=cards.scrollLeft += window.innerWidth / 2 > 600 ? window.innerWidth /2 : window.innerWidth -100
+  }
+  
+  function handleScrollPrev (direction) {
+    const cards = document.querySelector('.card-content')
+    cards.scrollLeft=cards.scrollLeft -= window.innerWidth / 2 > 600 ? window.innerWidth /2 : window.innerWidth -100
+  }
+  
+  next.addEventListener('click', handleScrollNext)
+  prev.addEventListener('click', handleScrollPrev)
 
+ </script>
 
+<script>
+  var prfm = document.getElementById("promofm");
+  prfm.onmouseover = mouseOver;
+  prfm.onmouseout = mouseOut;
+  
+  function mouseOver() { 
+    prfm.src = "assets/promosm.png";
+  }
+  function mouseOut() { 
+    prfm.src = "assets/promo.png";
+  }
+</script>
 
+<script>
+  var ctfm = document.getElementById("cotizarfm");
+  ctfm.onmouseover = mouseOver;
+  ctfm.onmouseout = mouseOut;
+  
+  function mouseOver() { 
+    ctfm.src = "assets/cotsm.png";
+  }
+  function mouseOut() { 
+    ctfm.src = "assets/cotizar.png";
+  }
+</script>
+
+<script>
+  var wpsm = document.getElementById("wpfm");
+  wpsm.onmouseover = mouseOver;
+  wpsm.onmouseout = mouseOut;
+  
+  function mouseOver() { 
+    wpsm.src = "assets/wpsm.png";
+  }
+  function mouseOut() { 
+    wpsm.src = "assets/whatsapp.png";
+  }
+</script>
+
+<script>
+  var ubism = document.getElementById("ubicacionfm");
+  ubism.onmouseover = mouseOver;
+  ubism.onmouseout = mouseOut;
+  
+  function mouseOver() { 
+    ubism.src = "assets/ubism.png";
+  }
+  function mouseOut() { 
+    ubism.src = "assets/ubicacion.png";
+  }
+</script>
+
+<script>
+    var fbHome = document.getElementById("fbhome");
+    fbHome.onmouseover = mouseOver;
+    fbHome.onmouseout = mouseOut;
+    
+    function mouseOver() { 
+      fbHome.src = "assets/fbmo.png";
+    }
+    function mouseOut() { 
+      fbHome.src = "assets/fbhome.png";
+    }
+</script>
+
+<script>  
+    var igHome = document.getElementById("ighome");
+    igHome.onmouseover = mouseOver;
+    igHome.onmouseout = mouseOut;
+    
+    function mouseOver() { 
+      igHome.src = "assets/igmo.png";
+    }
+    function mouseOut() { 
+      igHome.src = "assets/ighome.png";
+    }
+</script>
+
+<script>  
+  var wpHome = document.getElementById("wphome");
+  wpHome.onmouseover = mouseOver;
+  wpHome.onmouseout = mouseOut;
+  
+  function mouseOver() { 
+    wpHome.src = "assets/wpmo.png";
+  }
+  function mouseOut() { 
+    wpHome.src = "assets/wphome.png";
+  }
+</script>
+
+<script>  
+  var ytHome = document.getElementById("ythome");
+  ytHome.onmouseover = mouseOver;
+  ytHome.onmouseout = mouseOut;
+  
+  function mouseOver() { 
+    ytHome.src = "assets/ytmo.png";
+  }
+  function mouseOut() { 
+    ytHome.src = "assets/ythome.png";
+  }
+</script>
+
+<!-- 
+
+<script>
+  $(document).ready(function() {
+  $(document).on("scroll", onScroll);
+
+  //smoothscroll
+  $(".menusticky a").on("click", function(e) {
+    e.preventDefault();
+    $(document).off("scroll");
+    console.log("click");
+
+    $(".menusticky a").each(function() {
+      $(this).removeClass("active");
+    });
+    $(this).addClass("active");
+
+    var target = this.hash,
+        menu = target;
+    $target = $(target);
+    $("html, body")
+      .stop()
+      .animate(
+      {
+        scrollTop: $target.offset().top + 2
+      },
+      500,
+      "swing",
+      function() {
+        window.location.hash = target;
+        $(document).on("scroll", onScroll);
+      }
+    );
+  });
+});
+
+function onScroll(event) {
+  var scrollPos = $(document).scrollTop();
+  $(".menusticky a").each(function() {
+    var currLink = $(this);
+    var refElement = $(currLink.attr("href"));
+    if (
+      refElement.position().top <= scrollPos &&
+      refElement.position().top + refElement.height() > scrollPos
+    ) {
+      $(".menusticky a").removeClass("active");
+      currLink.addClass("active");
+    } else {
+      currLink.removeClass("active");
+    }
+  });
+}
+</script> -->
+
+<script>
+  var ctfm = document.getElementById("cotizarfm");
+  ctfm.onmouseover = mouseOver;
+  ctfm.onmouseout = mouseOut;
+  
+  function mouseOver() { 
+    ctfm.src = "assets/cotsm.png";
+  }
+  function mouseOut() { 
+    ctfm.src = "assets/cotizar.png";
+  }
+</script>
+
+<script>
+  var wpsm = document.getElementById("wpfm");
+  wpsm.onmouseover = mouseOver;
+  wpsm.onmouseout = mouseOut;
+  
+  function mouseOver() { 
+    wpsm.src = "assets/wpsm.png";
+  }
+  function mouseOut() { 
+    wpsm.src = "assets/whatsapp.png";
+  }
+</script>
+
+<script>
+  var ubism = document.getElementById("ubicacionfm");
+  ubism.onmouseover = mouseOver;
+  ubism.onmouseout = mouseOut;
+  
+  function mouseOver() { 
+    ubism.src = "assets/ubism.png";
+  }
+  function mouseOut() { 
+    ubism.src = "assets/ubicacion.png";
+  }
+</script>
+
+<script>
+    var fbHome = document.getElementById("fbhome");
+    fbHome.onmouseover = mouseOver;
+    fbHome.onmouseout = mouseOut;
+    
+    function mouseOver() { 
+      fbHome.src = "assets/fbmo.png";
+    }
+    function mouseOut() { 
+      fbHome.src = "assets/fbhome.png";
+    }
+</script>
+
+<script>  
+    var igHome = document.getElementById("ighome");
+    igHome.onmouseover = mouseOver;
+    igHome.onmouseout = mouseOut;
+    
+    function mouseOver() { 
+      igHome.src = "assets/igmo.png";
+    }
+    function mouseOut() { 
+      igHome.src = "assets/ighome.png";
+    }
+</script>
+
+<script>  
+  var wpHome = document.getElementById("wphome");
+  wpHome.onmouseover = mouseOver;
+  wpHome.onmouseout = mouseOut;
+  
+  function mouseOver() { 
+    wpHome.src = "assets/wpmo.png";
+  }
+  function mouseOut() { 
+    wpHome.src = "assets/wphome.png";
+  }
+</script>
+
+<script>  
+  var ytHome = document.getElementById("ythome");
+  ytHome.onmouseover = mouseOver;
+  ytHome.onmouseout = mouseOut;
+  
+  function mouseOver() { 
+    ytHome.src = "assets/ytmo.png";
+  }
+  function mouseOut() { 
+    ytHome.src = "assets/ythome.png";
+  }
+</script> 
+
+<script>
+  const menu = document.querySelector('.menu');
+  var hamburguerBtn = document.getElementById('hamburger-btn');
+  var cerrarMenuButton = document.getElementById('cerrar-btn');
+
+  hamburguerBtn.addEventListener('click', function() {
+  menu.style.display = 'block';
+
+  cerrarMenuButton.addEventListener('click', function() {
+  menu.style.display = 'none';});
+});
+</script>
 </body>
 </html>

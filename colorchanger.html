@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.hoverintent/2013.03.11/hoverintent.min.js"></script>
+</head>
+<body>
+
+    <img id="gs8-colorchanger" src="assets/turquese.png" >
+           
+      
+    <div class="btn-colorchanger">
+    
+         <button  id="gs8-turquese"
+            onclick=turquesegs8();>
+         </button>
+
+         <button  id="gs8-white"
+             onclick=whitegs8();>
+         </button>
+
+         <button  id="gs8-dark"
+            onclick=blackgs8();>
+         </button>
+
+         <button  id="gs8-gray"
+            onclick=graygs8();>
+        </button>
+
+        <button  id="gs8-silver"
+        onclick=silvergs8();>
+        </button>
+  
+    </div>
+</body>
+
+<style>
+        .btn-colorchanger{
+           margin-left:10%;
+         }
+
+         #gs8-colorchanger{
+          margin-left: 0%;
+          margin-bottom: 20px;
+          width: 600px;
+          height: auto;
+         }
+
+         #gs8-turquese{
+           display:inline-block;
+           box-sizing: border-box;
+           box-shadow: 0px 05px 1s 0px rgba(0, 0, 0, 0.15);
+           transition: all 0.2s;
+           border: none;
+           background-color:#007168;
+           border-radius: 50%;
+           margin-right: 15px;
+           height:30px;
+           width:30px;
+           filter: brightness(100%) saturate(150%);  
+         }
+
+         #gs8-white{
+           display:inline-block;
+           box-sizing: border-box;
+           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+           transition: all 0.2s;
+           border: none;
+           background-color:rgb(255, 255, 255);
+           border-radius: 50%;
+           margin-right: 15px;
+           height:30px;
+           width:30px;
+           filter: brightness(100%) saturate(110%); 
+         }
+
+         #gs8-dark{
+           display:inline-block;
+           box-sizing: border-box;
+           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+           transition: all 0.2s;
+           border: none;
+           background-color:#090909;
+           border-radius: 50%;
+           margin-right: 15px;
+           height:30px;
+           width:30px;
+           filter: brightness(110%) saturate(100%); 
+         }
+
+         #gs8-gray{
+           display:inline-block;
+           box-sizing: border-box;
+           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+           transition: all 0.2s;
+           border: none;
+           background-color: #6d7176;
+           border-radius: 50%;
+           margin-right: 15px;
+           height:30px;
+           width:30px;
+         }
+
+         #gs8-silver{
+           display:inline-block;
+           box-sizing: border-box;
+           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+           transition: all 0.2s;
+           border: none;
+           background-color: #c6cacf;
+           border-radius: 50%;
+           margin-right: 15px;
+           height:30px;
+           width:30px;
+           filter: brightness(100%) saturate(150%); 
+         }
+</style>
+
+<script>
+ 
+ function turquesegs8(){
+             document.getElementById('gs8-colorchanger')
+             .src="assets/turquese.png";
+      
+         }
+
+         function whitegs8(){
+             document.getElementById('gs8-colorchanger')
+             .src="assets/white.png";
+            
+        }
+
+      
+        function blackgs8(){
+             document.getElementById('gs8-colorchanger')
+             .src="assets/black.png";
+            
+        }
+
+        function graygs8(){
+             document.getElementById('gs8-colorchanger')
+             .src="assets/gray.png";
+            
+        }  
+        
+        function silvergs8(){
+             document.getElementById('gs8-colorchanger')
+             .src="assets/silver.png";
+            
+        }
+</script>
+</html>

@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.hoverintent/2013.03.11/hoverintent.min.js"></script>
+   
+    
+
+
+    <title>GS8</title>
+</head>
+<body>
+
+  <video class="video-bg" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="assets/gs8herovideo.mp4" type="video/mp4">
+  </video>
+
+<div class="gs8-header">  
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assets/gacmotorredlogo.png" alt="Logo" >
+    </div>
+
+    <div class="hamburger" id="hamburger-btn">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="menu menu-video" >
+      <img class="logo-mobile" src="assets/gacmotorredlogo.png" alt="Logomobile" width="220" height="auto">
+      <ul>
+        <li><a href="#">INICIO</a></li>
+
+         <li class="submenu">
+          <a href="#">MODELOS</a>
+          <ul id="submenu-li" class="submenu-video">
+            <li><a href="#">GS8</a></li>
+            <li><a href="#">EMKOO</a></li>
+            <li><a href="#">GS3</a></li>
+            <li><a href="#">M6</a></li>
+          </ul>
+        </li> 
+        <li><a href="#">QUIÉNES SOMOS</a></li>
+        <li class="submenu">
+          <a href="#">POSTVENTA</a>
+          <ul id="submenu-li" class="submenu-video">
+            <li><a href="#">Talleres</a></li>
+            <li><a href="#">Repuestos</a></li>
+          </ul>
+        </li>
+        <li><a href="#">BLOG</a></li>
+        <div class="social-icons-mobile">
+          <a href="#"><img src="assets/fbhome.png" alt="Facebook"></a>
+          <a href="#"><img src="assets/ighome.png" alt="Twitter"></a>
+          <a href="#"><img src="assets/wphome.png" alt="Instagram"></a>
+          <a href="#"><img src="assets/ythome.png" alt="LinkedIn"></a>
+        </div>
+      </ul>
+      <button id="cerrar-btn">X</button>
+    </div>
+    <div class="social-icons">
+      <a href="#"><img id="fbhome" src="assets/fbhome.png" alt="Facebook"></a>
+      <a href="#"><img id="ighome" src="assets/ighome.png" alt="Instagram"></a>
+      <a href="#"><img id="wphome" src="assets/wphome.png" alt="Whatsapp"></a>
+      <a href="#"><img id="ythome" src="assets/ythome.png" alt="Youtube"></a>
+    </div>
+  </nav>
+    </div>
+
+    <div class="menusticky">
+      <a class="dot" href="#index">
+        <img id="promofm" src="assets/promo.png">
+        <span class="forty">PROMOCIONES</span>
+      </a>
+
+      <a class="dot" href="#index">
+        <img id="cotizarfm" src="assets/cotizar.png">
+        <span class="sixty">COTIZAR</span>
+      </a>
+
+      <a class="dot" href="#index">
+        <img id="wpfm" src="assets/whatsapp.png">
+        <span class="seventy">WHATSAPP</span>
+      </a>
+
+      <a class="dot" href="#index">
+        <img id="ubicacionfm" src="assets/ubicacion.png">
+        <span class="eighty">UBICACIÓN</span>
+      </a>
+    </div>
+
+
+    <section id="gs8-description">
+      <div class="gs8-container">
+      <div class="gs8-wrapper">
+      <img class="gs8-logo-img" src="assets/gs8scale.png" class="gs8-logo" >
+      <h1 class="slogan-about">LUJO QUE INSPIRA</h1>
+      <img class="gs8-vehicle" src="assets/gs8-post.png" class="gs8-logo" >
+    <!--
+      <div class="marker-container">
+      <div class="markers" tabindex="0" style="grid-column: 1/8; grid-row: 3/10;">
+        <div class="marker__card">
+            <p>Confort y funcionalidad fusionados en
+              líneas infinitas que junto a su gran poder se
+              abre paso en cualquier camino. Un motor
+              2.0 Turbo con infinitas posibilidades.</p>
+          </div>
+      </div>
+    </div>-->
+    </div>
+  </div>
+    </section>
+
+    <section class="gs8-interior">
+      <div class="gs8-container-color">
+      <div class="gs8-wrapper-color">
+      <h2 class="title-interior">INTERIOR</h2>
+
+      <div class="color-container">
+        <div class="left-section">
+          <!-- Contenido de la sección izquierda -->
+              <img id="gs8-colorchanger" src="assets/turquese.png" >
+    
+              <div class="btn-colorchanger">
+        
+                <button  id="gs8-turquese"
+                    onclick=turquesegs8();>
+                </button>
+
+                <button  id="gs8-white"
+                    onclick=whitegs8();>
+                </button>
+
+                <button  id="gs8-dark"
+                    onclick=blackgs8();>
+                </button>
+
+                <button  id="gs8-gray"
+                    onclick=graygs8();>
+                </button>
+
+                <button  id="gs8-silver"
+                onclick=silvergs8();>
+                </button>
+              </div>
+        </div>
+
+    
+        <div class="right-section">
+          <div class="carousel-container">
+            <div class="carousel-slide">
+              <img src="assets/gs8-interior-1.jpg" alt="Imagen 1">
+              <p>Una apariencia dominante y un carácter 
+                sofisticado, un diseño geométrico totalmente 
+                funcional con una sola misión: superar tus 
+                expectativas</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/gs8-interior-2.jpg" alt="Imagen 2">
+              <p>Una apariencia dominante y un carácter 
+                sofisticado, un diseño geométrico totalmente 
+                funcional con una sola misión: superar tus 
+                expectativas 2</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/gs8-interior-1.jpg" alt="Imagen 3">
+              <p>Una apariencia dominante y un carácter 
+                sofisticado, un diseño geométrico totalmente 
+                funcional con una sola misión: superar tus 
+                expectativas 3</p>
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/gs8-interior-2.jpg" alt="Imagen 4">
+              <p>Una apariencia dominante y un carácter 
+                sofisticado, un diseño geométrico totalmente 
+                funcional con una sola misión: superar tus 
+                expectativas 4</p>
+            </div>
+            <button class="prev-btn">&lt;</button>
+            <button class="next-btn">&gt;</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="technical-sheet">
+
+      <div class="wrapper-sheet">
+        <div class="tabs">
+
+          <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+            <label for="tab-1" class="tab-label">MOTOR</label>
+            <div class="tab-content">
+              <img class="sheet-img" src="assets/info-sheet.png" width="1000px" height="auto">
+              <a href="ruta-del-archivo.pdf" download class="download-button">
+                FICHA TÉCNICA
+                <img src="assets/arrow-down2.png" class="icon-arrow">
+              </a>
+            </div>
+            </div>
+
+          <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+            <label for="tab-2" class="tab-label">EXTERIOR</label>
+            <div class="tab-content">
+              <img class="sheet-img" src="assets/info-sheet.png" width="1000px" height="auto">
+              <a href="ruta-del-archivo.pdf" download class="download-button">
+                FICHA TÉCNICA
+                <img src="assets/arrow-down2.png" class="icon-arrow">
+              </a>
+            </div>
+          </div>
+          
+          <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
+            <label for="tab-3" class="tab-label">INTERIOR</label>
+            <div class="tab-content">
+              <img class="sheet-img" src="assets/info-sheet.png" width="1000px" height="auto">
+              <a href="ruta-del-archivo.pdf" download class="download-button">
+                FICHA TÉCNICA
+                <img src="assets/arrow-down2.png" class="icon-arrow">
+              </a>
+            </div>
+            </div>
+            
+          <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-4" class="tab-switch">
+            <label for="tab-4" class="tab-label">SEGURIDAD</label>
+            <div class="tab-content">
+              <img class="sheet-img" src="assets/info-sheet.png">
+              <a href="ruta-del-archivo.pdf" download class="download-button">
+                FICHA TÉCNICA
+                <img src="assets/arrow-down2.png" class="icon-arrow">
+              </a>
+            </div>  
+          </div>
+
+    </section>
+
+    <section id="awards-section">
+
+        <div class="image-container-wrapper">
+          <div class="horizontal-images">
+            <img src="assets/first-award.png" alt="Image 1" class="award-image">
+            <img src="assets/first-award-title.png" alt="Image 2" class="award-image ">
+            <img src="assets/second-award.png" alt="Image 3" class="award-image award">
+            <img src="assets/second-award-title.png" alt="Image 4" class="award-image">
+            <img src="assets/third-award.png" alt="Image 5" class="third-award">
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-logo-container">
+          <img src="assets/gacmotorredlogo.png" alt="Logo Empresa" class="footer-logo">
+        </div>
+        <div class="footer-content">
+          <div class="footer-column">
+            <ul class="models-list"> Modelos
+    
+              <li><a href="#home">Emzoom</a></li>
+              <li><a href="#home">Emkoo</a></li>
+              <li><a href="#home">GS8</a></li>
+              <li><a href="#home">M6</a></li> 
+    
+            </ul>
+            
+          </div>
+          <div class="footer-column">
+            <ul class="services-list">
+    
+              <li><a href="#home">Servicio al Cliente</a></li>
+              <li><a href="#home">Red de Atención</a></li>
+              <li><a href="#home">Promociones</a></li>
+              <li><a href="#home">Politica de Privacidad</a></li>
+              <li><a href="#home">Politica de Cookies</a></li> 
+    
+            </ul>
+          </div>
+    
+          <div class="footer-column">
+            <ul class="contact-list">
+    
+              <li><a href="#home">+505 89899898</a></li>
+              <li><a href="#home">Email: Serviciogac@gmail.com</a></li>
+              <li><a href="#home">Showroom Galerías Santo Domingo</a></li>
+              <li><a href="#home">Managua, Nicaragua</a></li>
+    
+            </ul>
+          </div>
+    
+          <div class="footer-column">
+            <!-- Contenido de la columna 3 -->
+          </div>
+          <div class="footer-column">
+            <img src="assets/samsalogo.png" alt="Logo Derecha" class="footer-logo-samsa">
+            <div class="socialicon-container-ft">
+            <a href="#home"><img src="assets/ft-facebook.png" alt="Facebook" class="social-icon-ft"></a>
+            <a href="#home"><img src="assets/ft-instagram.png" alt="Instagram" class="social-icon-ft"></a>
+            <a href="#home"><img src="assets/ft-whatapp.png" alt="whatsapp" class="social-icon-ft"></a>
+            <a href="#home"><img src="assets/ft-youtube.png" alt="YouTube" class="social-icon-ft"></a>
+          </div>
+          </div>
+        </div>
+    
+      </footer>
+    
+    
+      <div class="copyright-section">
+        <p>Copyright by SAMSA Nicaragua 2024. Todos los derechos reservados.</p>
+      </div>
+<style>
+
+</style>
+
+<script>
+  const menu = document.querySelector('.menu');
+  var hamburguerBtn = document.getElementById('hamburger-btn');
+  var cerrarMenuButton = document.getElementById('cerrar-btn');
+
+  hamburguerBtn.addEventListener('click', function() {
+  menu.style.display = 'block';
+
+  cerrarMenuButton.addEventListener('click', function() {
+  menu.style.display = 'none';});
+});
+</script>
+
+<script>
+  var prfm = document.getElementById("promofm");
+  prfm.onmouseover = mouseOver;
+  prfm.onmouseout = mouseOut;
+  
+  function mouseOver() { 
+    prfm.src = "assets/promosm.png";
+  }
+  function mouseOut() { 
+    prfm.src = "assets/promo.png";
+  }
+</script>
+
+<script>
+  var ctfm = document.getElementById("cotizarfm");
+  ctfm.onmouseover = mouseOver;
+  ctfm.onmouseout = mouseOut;
+  
+  function mouseOver() { 
+    ctfm.src = "assets/cotsm.png";
+  }
+  function mouseOut() { 
+    ctfm.src = "assets/cotizar.png";
+  }
+</script>
+
+<script>
+  var wpsm = document.getElementById("wpfm");
+  wpsm.onmouseover = mouseOver;
+  wpsm.onmouseout = mouseOut;
+  
+  function mouseOver() { 
+    wpsm.src = "assets/wpsm.png";
+  }
+  function mouseOut() { 
+    wpsm.src = "assets/whatsapp.png";
+  }
+</script>
+
+<script>
+  var ubism = document.getElementById("ubicacionfm");
+  ubism.onmouseover = mouseOver;
+  ubism.onmouseout = mouseOut;
+  
+  function mouseOver() { 
+    ubism.src = "assets/ubism.png";
+  }
+  function mouseOut() { 
+    ubism.src = "assets/ubicacion.png";
+  }
+</script>
+
+<script>
+    var fbHome = document.getElementById("fbhome");
+    fbHome.onmouseover = mouseOver;
+    fbHome.onmouseout = mouseOut;
+    
+    function mouseOver() { 
+      fbHome.src = "assets/fbmo.png";
+    }
+    function mouseOut() { 
+      fbHome.src = "assets/fbhome.png";
+    }
+</script>
+
+<script>  
+    var igHome = document.getElementById("ighome");
+    igHome.onmouseover = mouseOver;
+    igHome.onmouseout = mouseOut;
+    
+    function mouseOver() { 
+      igHome.src = "assets/igmo.png";
+    }
+    function mouseOut() { 
+      igHome.src = "assets/ighome.png";
+    }
+</script>
+
+<script>  
+  var wpHome = document.getElementById("wphome");
+  wpHome.onmouseover = mouseOver;
+  wpHome.onmouseout = mouseOut;
+  
+  function mouseOver() { 
+    wpHome.src = "assets/wpmo.png";
+  }
+  function mouseOut() { 
+    wpHome.src = "assets/wphome.png";
+  }
+</script>
+
+<script>  
+  var ytHome = document.getElementById("ythome");
+  ytHome.onmouseover = mouseOver;
+  ytHome.onmouseout = mouseOut;
+  
+  function mouseOver() { 
+    ytHome.src = "assets/ytmo.png";
+  }
+  function mouseOut() { 
+    ytHome.src = "assets/ythome.png";
+  }
+</script>
+
+<script>
+  var ctfm = document.getElementById("cotizarfm");
+  ctfm.onmouseover = mouseOver;
+  ctfm.onmouseout = mouseOut;
+  
+  function mouseOver() { 
+    ctfm.src = "assets/cotsm.png";
+  }
+  function mouseOut() { 
+    ctfm.src = "assets/cotizar.png";
+  }
+</script>
+
+<script>
+  var wpsm = document.getElementById("wpfm");
+  wpsm.onmouseover = mouseOver;
+  wpsm.onmouseout = mouseOut;
+  
+  function mouseOver() { 
+    wpsm.src = "assets/wpsm.png";
+  }
+  function mouseOut() { 
+    wpsm.src = "assets/whatsapp.png";
+  }
+</script>
+
+<script>
+  var ubism = document.getElementById("ubicacionfm");
+  ubism.onmouseover = mouseOver;
+  ubism.onmouseout = mouseOut;
+  
+  function mouseOver() { 
+    ubism.src = "assets/ubism.png";
+  }
+  function mouseOut() { 
+    ubism.src = "assets/ubicacion.png";
+  }
+</script>
+
+<script>
+    var fbHome = document.getElementById("fbhome");
+    fbHome.onmouseover = mouseOver;
+    fbHome.onmouseout = mouseOut;
+    
+    function mouseOver() { 
+      fbHome.src = "assets/fbmo.png";
+    }
+    function mouseOut() { 
+      fbHome.src = "assets/fbhome.png";
+    }
+</script>
+
+<script>  
+    var igHome = document.getElementById("ighome");
+    igHome.onmouseover = mouseOver;
+    igHome.onmouseout = mouseOut;
+    
+    function mouseOver() { 
+      igHome.src = "assets/igmo.png";
+    }
+    function mouseOut() { 
+      igHome.src = "assets/ighome.png";
+    }
+</script>
+
+<script>  
+  var wpHome = document.getElementById("wphome");
+  wpHome.onmouseover = mouseOver;
+  wpHome.onmouseout = mouseOut;
+  
+  function mouseOver() { 
+    wpHome.src = "assets/wpmo.png";
+  }
+  function mouseOut() { 
+    wpHome.src = "assets/wphome.png";
+  }
+</script>
+
+<script>  
+  var ytHome = document.getElementById("ythome");
+  ytHome.onmouseover = mouseOver;
+  ytHome.onmouseout = mouseOut;
+  
+  function mouseOver() { 
+    ytHome.src = "assets/ytmo.png";
+  }
+  function mouseOut() { 
+    ytHome.src = "assets/ythome.png";
+  }
+</script> 
+<script>
+function turquesegs8(){
+    document.getElementById('gs8-colorchanger')
+    .src="assets/turquese.png";
+
+}
+
+function whitegs8(){
+    document.getElementById('gs8-colorchanger')
+    .src="assets/white.png";
+  
+}
+
+
+function blackgs8(){
+    document.getElementById('gs8-colorchanger')
+    .src="assets/black.png";
+  
+}
+
+function graygs8(){
+    document.getElementById('gs8-colorchanger')
+    .src="assets/gray.png";
+  
+}  
+
+function silvergs8(){
+    document.getElementById('gs8-colorchanger')
+    .src="assets/silver.png";
+  
+}
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  let currentSlide = 0;
+  const slides = document.querySelectorAll(".carousel-slide");
+  const totalSlides = slides.length;
+
+  const showSlide = (index) => {
+    slides.forEach((slide) => {
+      slide.style.display = "none";
+    });
+
+    slides[index].style.display = "block";
+  };
+
+  const nextSlide = () => {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    showSlide(currentSlide);
+  };
+
+  const prevSlide = () => {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    showSlide(currentSlide);
+  };
+
+  const initCarousel = () => {
+    showSlide(currentSlide);
+
+    document.querySelector(".next-btn").addEventListener("click", nextSlide);
+    document.querySelector(".prev-btn").addEventListener("click", prevSlide);
+  };
+
+  initCarousel();
+});
+
+</script>
+
+</body>
+</html>
